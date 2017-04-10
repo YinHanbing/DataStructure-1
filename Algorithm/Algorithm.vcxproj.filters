@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\List">
+      <UniqueIdentifier>{5fe36064-91c8-431a-8c9a-a9f58a6446f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\SqStack">
+      <UniqueIdentifier>{1cb7d142-504a-4183-9de6-ba0af7a07fc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\List\Link">
+      <UniqueIdentifier>{60c83bb8-2829-4918-a4b2-321d45b5268f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\List\SL">
+      <UniqueIdentifier>{13c79ed4-8fd4-4e77-a758-fba97572925c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\List\Sq">
+      <UniqueIdentifier>{af5996df-3a0b-4c88-ac52-d12a228cfa3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Queue">
+      <UniqueIdentifier>{27a4a51b-6d2b-4cfb-91bd-1eb8da85afa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Queue\Link">
+      <UniqueIdentifier>{726869a6-18ba-4b02-92a8-6ccdfc4837ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Queue\Sq">
+      <UniqueIdentifier>{19567f4a-09bc-42e8-bde6-3c81ad3acff6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GetTop.cpp">
+      <Filter>源文件\SqStack</Filter>
+    </ClCompile>
+    <ClCompile Include="InitStack.cpp">
+      <Filter>源文件\SqStack</Filter>
+    </ClCompile>
+    <ClCompile Include="Pop.cpp">
+      <Filter>源文件\SqStack</Filter>
+    </ClCompile>
+    <ClCompile Include="Push.cpp">
+      <Filter>源文件\SqStack</Filter>
+    </ClCompile>
+    <ClCompile Include="StackEmpty.cpp">
+      <Filter>源文件\SqStack</Filter>
+    </ClCompile>
+    <ClCompile Include="StackFull.cpp">
+      <Filter>源文件\SqStack</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateList_L.cpp">
+      <Filter>源文件\List\Link</Filter>
+    </ClCompile>
+    <ClCompile Include="GetElem_L.cpp">
+      <Filter>源文件\List\Link</Filter>
+    </ClCompile>
+    <ClCompile Include="ListDelete_L.cpp">
+      <Filter>源文件\List\Link</Filter>
+    </ClCompile>
+    <ClCompile Include="ListInsert_L.cpp">
+      <Filter>源文件\List\Link</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeList_L.cpp">
+      <Filter>源文件\List\Link</Filter>
+    </ClCompile>
+    <ClCompile Include="InitList_Sq.cpp">
+      <Filter>源文件\List\Sq</Filter>
+    </ClCompile>
+    <ClCompile Include="ListDelete_Sq.cpp">
+      <Filter>源文件\List\Sq</Filter>
+    </ClCompile>
+    <ClCompile Include="ListInsert_Sq.cpp">
+      <Filter>源文件\List\Sq</Filter>
+    </ClCompile>
+    <ClCompile Include="LocateElem_Sq.cpp">
+      <Filter>源文件\List\Sq</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeList_Sq.cpp">
+      <Filter>源文件\List\Sq</Filter>
+    </ClCompile>
+    <ClCompile Include="Free_SL.cpp">
+      <Filter>源文件\List\SL</Filter>
+    </ClCompile>
+    <ClCompile Include="InitSpace_SL.cpp">
+      <Filter>源文件\List\SL</Filter>
+    </ClCompile>
+    <ClCompile Include="LocateElem_SL.cpp">
+      <Filter>源文件\List\SL</Filter>
+    </ClCompile>
+    <ClCompile Include="Malloc_SL.cpp">
+      <Filter>源文件\List\SL</Filter>
+    </ClCompile>
+    <ClCompile Include="InitQueue_Sq.cpp">
+      <Filter>源文件\Queue\Sq</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueLength_Sq.cpp">
+      <Filter>源文件\Queue\Sq</Filter>
+    </ClCompile>
+    <ClCompile Include="EnQueue_Sq.cpp">
+      <Filter>源文件\Queue\Sq</Filter>
+    </ClCompile>
+    <ClCompile Include="DeQueue_L.cpp">
+      <Filter>源文件\Queue\Link</Filter>
+    </ClCompile>
+    <ClCompile Include="DestroyQueue_L.cpp">
+      <Filter>源文件\Queue\Link</Filter>
+    </ClCompile>
+    <ClCompile Include="EnQueue_L.cpp">
+      <Filter>源文件\Queue\Link</Filter>
+    </ClCompile>
+    <ClCompile Include="InitQueue_L.cpp">
+      <Filter>源文件\Queue\Link</Filter>
+    </ClCompile>
+    <ClCompile Include="DeQueue_Sq.cpp">
+      <Filter>源文件\Queue\Sq</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="predefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="List.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SqStack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SqQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
