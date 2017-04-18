@@ -173,6 +173,7 @@
     <ClCompile Include="StackFull.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BiTree.h" />
     <ClInclude Include="LinkQueue.h" />
     <ClInclude Include="List.h" />
     <ClInclude Include="predefine.h" />
