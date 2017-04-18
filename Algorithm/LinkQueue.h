@@ -46,4 +46,4 @@ Status EnQueue(LinkQueue &Q, QElemType e);
 Status DeQueue(LinkQueue &Q, QElemType &e);
 
 // 从队头到队尾依次对队列Q中每个元素调用函数visit()。一旦visit失败，则操作失败。
-// Status QueueTraverse(LinkQueue Q, visit());
+Status QueueTraverse(LinkQueue Q, Status *visit());
