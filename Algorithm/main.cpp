@@ -1,5 +1,7 @@
 #include "List.h"
 
+/*
+// 验证SqList相关算法的主函数
 Status main()
 {
 	SqList L;
@@ -26,6 +28,7 @@ Status main()
 	}
 	printf("\n");
 	printf("----------------------------\n");
+
 	// 在第i个位置前插入e并打印
 	printf("请输入将在第几个位置前插入元素：");
 	scanf("%d", &i);
@@ -60,6 +63,83 @@ Status main()
 		printf("%d ", *(L.elem + i));
 	}
 	printf("\n");
+	printf("e = %d\n", e);
+
+	return OK;
+}
+*/
+
+// 验证LinkList相关算法的主函数
+Status main()
+{
+	LinkList L, p;
+	int i;
+	ElemType e;
+
+	printf("请输入要创建链式线性表元素的个数：");
+	scanf("%d", &i);
+	printf("请倒序输入%d个元素：\n", i);
+
+	// 创建线性链表
+	CreateList_L(L, i);
+
+	// 打印LinkList中的元素
+	printf("----------------------------\n");
+	printf("LinkList中的元素为：\n");
+	for (p = L->next; p; p = p->next)
+	{
+		printf("%d ", p->data);
+	}
+	printf("\n");
+	printf("----------------------------\n");
+
+	// 在第i个位置前插入e并打印
+	printf("请输入将在第几个位置前插入元素：");
+	scanf("%d", &i);
+	printf("请输入要插入的元素：");
+	scanf("%d", &e);
+	if (!ListInsert_L(L, i, e))
+	{
+		printf("无法在第%d个位置前插入元素", i);
+		printf("\n");
+		exit(ERROR);
+	}
+	printf("插入成功：\n");
+	for (p = L->next; p; p = p->next)
+	{
+		printf("%d ", p->data);
+	}
+	printf("\n");
+	printf("----------------------------\n");
+
+	// 删除第i个位置的元素后，打印LinkList中的元素并用e返回删除的元素
+	printf("请输入要删除元素的位置：");
+	scanf("%d", &i);
+	if (!ListDelete_L(L, i, e))
+	{
+		printf("无法删除第%d个位置的元素", i);
+		printf("\n");
+		exit(ERROR);
+	}
+	printf("删除成功：\n");
+	for (p = L->next; p; p = p->next)
+	{
+		printf("%d ", p->data);
+	}
+	printf("\n");
+	printf("e = %d\n", e);
+	printf("----------------------------\n");
+
+	// 获取LinkList中的第i个元素
+	printf("请输入想要获取第几个元素：");
+	scanf("%d", &i);
+	if (!GetElem_L(L, i, e))
+	{
+		printf("无法获取第%d个位置的元素", i);
+		printf("\n");
+		exit(ERROR);
+	}
+	printf("获取成功：\n");
 	printf("e = %d\n", e);
 
 	return OK;
