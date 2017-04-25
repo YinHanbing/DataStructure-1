@@ -1,4 +1,4 @@
-#include "List.h"
+#include "LinkList.h"
 
 // 在带头结点的单链线性表L中第i个位置之前插入元素e
 Status ListInsert_L(LinkList &L, int i, ElemType e)

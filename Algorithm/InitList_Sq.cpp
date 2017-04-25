@@ -1,4 +1,4 @@
-#include "List.h"
+#include "SqList.h"
 
 // 构造一个空的线性表L
 Status InitList_Sq(SqList &L)

@@ -1,4 +1,4 @@
-#include "List.h"
+#include "LinkList.h"
 
 /*
  * 已知单链线性表La和Lb的元素按值非递减排列

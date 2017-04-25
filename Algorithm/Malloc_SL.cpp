@@ -1,4 +1,4 @@
-#include "List.h"
+#include "SLList.h"
 
 // 若备用空间链表非空，则返回分配的结点下标，否则返回0
 int Malloc_SL(SLinkList &space)

@@ -1,4 +1,4 @@
-#include "List.h"
+#include "SqList.h"
 
 /*
  * 在顺序线性表L中第i个位置之前插入一个新的元素e，

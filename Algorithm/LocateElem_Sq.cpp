@@ -1,4 +1,4 @@
-#include "List.h"
+#include "SqList.h"
 
 /*
  * 在顺序线性表L中查找第1个值与e满足compare()的元素的位序

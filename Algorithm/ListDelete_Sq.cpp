@@ -1,4 +1,4 @@
-#include "List.h"
+#include "SqList.h"
 
 /*
  * 在顺序线性表L中删除第i个元素，并用e返回其值

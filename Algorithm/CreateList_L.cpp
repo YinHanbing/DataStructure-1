@@ -1,4 +1,4 @@
-#include "List.h"
+#include "LinkList.h"
 
 // 逆位序输入n个元素的值，建立带表头结点的单链线性表L
 void CreateList_L(LinkList &L, int n)

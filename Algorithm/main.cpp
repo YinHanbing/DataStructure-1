@@ -1,4 +1,5 @@
-#include "List.h"
+#include "SqList.h"
+#include "LinkList.h"
 #include "BiTree.h"
 
 /*
@@ -160,6 +161,7 @@ Status PrintElement(TElemType e)
 Status main()
 {
 	BiTree T;
+	printf("请创建一个二叉树：");
 	CreateBiTree(T);	// 创建一个二叉树
 	printf("先序遍历：");
 	PreOrderTraverse(T, PrintElement);

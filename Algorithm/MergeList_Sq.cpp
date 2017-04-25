@@ -1,4 +1,4 @@
-#include "List.h"
+#include "SqList.h"
 /*
  * 已知顺序线性表La和Lb的元素按值非递减排列
  * 归并La和Lb得到新的顺序线性表Lc，Lc的元素也按值非递减排列

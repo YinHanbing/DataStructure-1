@@ -178,9 +178,11 @@
   <ItemGroup>
     <ClInclude Include="BiThrTree.h" />
     <ClInclude Include="BiTree.h" />
+    <ClInclude Include="LinkList.h" />
     <ClInclude Include="LinkQueue.h" />
-    <ClInclude Include="List.h" />
     <ClInclude Include="predefine.h" />
+    <ClInclude Include="SLList.h" />
+    <ClInclude Include="SqList.h" />
     <ClInclude Include="SqQueue.h" />
     <ClInclude Include="SqStack.h" />
   </ItemGroup>
