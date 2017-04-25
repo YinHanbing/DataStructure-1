@@ -1,9 +1,11 @@
 #pragma once
 
 #include "predefine.h"
+#include "BiTree.h"
 
 // SElemType表示一个栈空间元素
-typedef int SElemType;
+// typedef int SElemType;
+typedef BiTree SElemType;
 
 // 栈的顺序存储表示
 #define STACK_INIT_SIZE 5	// 存储空间初始分配量

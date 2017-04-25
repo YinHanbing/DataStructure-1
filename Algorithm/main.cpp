@@ -1,4 +1,5 @@
 #include "List.h"
+#include "BiTree.h"
 
 /*
 // 验证SqList相关算法的主函数
@@ -69,6 +70,7 @@ Status main()
 }
 */
 
+/*
 // 验证LinkList相关算法的主函数
 Status main()
 {
@@ -142,5 +144,31 @@ Status main()
 	printf("获取成功：\n");
 	printf("e = %d\n", e);
 
+	return OK;
+}
+*/
+
+// 简单的Visit函数
+Status PrintElement(TElemType e)
+{
+	printf("%c", e);
+	return OK;
+}
+
+// 验证BiTree相关算法的主函数
+// 输入:"ABC  DE G  F   "
+Status main()
+{
+	BiTree T;
+	CreateBiTree(T);	// 创建一个二叉树
+	printf("先序遍历：");
+	PreOrderTraverse(T, PrintElement);
+	printf("\n");
+	printf("中序遍历（方法一）：");
+	InOrderTraverse(T, PrintElement, 1);
+	printf("\n");
+	printf("中序遍历（方法二）：");
+	InOrderTraverse(T, PrintElement, 2);
+	printf("\n");
 	return OK;
 }

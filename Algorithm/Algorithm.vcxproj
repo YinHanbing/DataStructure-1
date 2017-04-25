@@ -142,6 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CreateBiTree.cpp" />
     <ClCompile Include="CreateList_L.cpp" />
     <ClCompile Include="DeQueue_L.cpp" />
     <ClCompile Include="DeQueue_Sq.cpp" />
@@ -156,6 +157,7 @@
     <ClCompile Include="InitQueue_Sq.cpp" />
     <ClCompile Include="InitSpace_SL.cpp" />
     <ClCompile Include="InitStack.cpp" />
+    <ClCompile Include="InOrderTraverse.cpp" />
     <ClCompile Include="ListDelete_L.cpp" />
     <ClCompile Include="ListDelete_Sq.cpp" />
     <ClCompile Include="ListInsert_L.cpp" />
@@ -167,12 +169,14 @@
     <ClCompile Include="MergeList_L.cpp" />
     <ClCompile Include="MergeList_Sq.cpp" />
     <ClCompile Include="Pop.cpp" />
+    <ClCompile Include="PreOrderTraverse.cpp" />
     <ClCompile Include="Push.cpp" />
     <ClCompile Include="QueueLength_Sq.cpp" />
     <ClCompile Include="StackEmpty.cpp" />
     <ClCompile Include="StackFull.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BiThrTree.h" />
     <ClInclude Include="BiTree.h" />
     <ClInclude Include="LinkQueue.h" />
     <ClInclude Include="List.h" />

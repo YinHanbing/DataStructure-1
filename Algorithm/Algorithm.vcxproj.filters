@@ -37,6 +37,15 @@
     <Filter Include="源文件\Queue\Sq">
       <UniqueIdentifier>{19567f4a-09bc-42e8-bde6-3c81ad3acff6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Tree">
+      <UniqueIdentifier>{f2163df4-1d50-45b3-840d-894db70dd3b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Tree\BiTree">
+      <UniqueIdentifier>{4877ed06-2d63-4f12-96d8-69f5939011c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Tree\BiThrTree">
+      <UniqueIdentifier>{4c87fa50-ce80-417c-9203-848e6a5208ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -126,6 +135,15 @@
     <ClCompile Include="DeQueue_Sq.cpp">
       <Filter>源文件\Queue\Sq</Filter>
     </ClCompile>
+    <ClCompile Include="PreOrderTraverse.cpp">
+      <Filter>源文件\Tree\BiTree</Filter>
+    </ClCompile>
+    <ClCompile Include="InOrderTraverse.cpp">
+      <Filter>源文件\Tree\BiTree</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateBiTree.cpp">
+      <Filter>源文件\Tree\BiTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="predefine.h">
@@ -144,6 +162,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="BiTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BiThrTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
