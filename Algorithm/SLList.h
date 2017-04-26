@@ -18,15 +18,15 @@ typedef struct {
 void Free_SL(SLinkList &space, int k);
 
 /*
-* 将一维数组space中各分量链成一个备用链表，space[0].cur位头指针，
-* '0'表示空指针
-*/
+ * 将一维数组space中各分量链成一个备用链表，space[0].cur位头指针，
+ * '0'表示空指针
+ */
 void InitSpace_SL(SLinkList &space);
 
 /*
-* 在静态单链线性表L中查找第1个值为e的元素
-* 若找到，则返回它在L中的位序，否则返回0
-*/
+ * 在静态单链线性表L中查找第1个值为e的元素
+ * 若找到，则返回它在L中的位序，否则返回0
+ */
 int LocateElem_SL(SLinkList S, ElemType e);
 
 // 若备用空间链表非空，则返回分配的结点下标，否则返回0

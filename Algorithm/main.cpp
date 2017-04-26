@@ -2,7 +2,6 @@
 #include "LinkList.h"
 #include "BiTree.h"
 
-/*
 // 验证SqList相关算法的主函数
 Status main()
 {
@@ -13,10 +12,9 @@ Status main()
 	InitList_Sq(L);
 
 	// 向SqList输入5个元素
-	printf("请向SqList中输入%d个元素：\n", L.listsize);
+	printf("请向SqList中输入%d个元素：", L.listsize);		// 每个元素间用空格隔开
 	for (i = 0; i < L.listsize; i++)
 	{
-		printf("请输入第%d个元素：", i + 1);
 		scanf("%d", &L.elem[i]);
 		++L.length;
 	}
@@ -69,7 +67,6 @@ Status main()
 
 	return OK;
 }
-*/
 
 /*
 // 验证LinkList相关算法的主函数
@@ -81,7 +78,7 @@ Status main()
 
 	printf("请输入要创建链式线性表元素的个数：");
 	scanf("%d", &i);
-	printf("请倒序输入%d个元素：\n", i);
+	printf("请倒序输入%d个元素：", i);			// 每个元素间用空格隔开
 
 	// 创建线性链表
 	CreateList_L(L, i);
@@ -149,6 +146,7 @@ Status main()
 }
 */
 
+/*
 // 简单的Visit函数
 Status PrintElement(TElemType e)
 {
@@ -174,3 +172,4 @@ Status main()
 	printf("\n");
 	return OK;
 }
+*/
