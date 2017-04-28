@@ -3,7 +3,8 @@
 #include "SqStack.h"
 #include "BiTree.h"
 
-// éªŒè¯SqListç›¸å…³ç®—æ³•çš„ä¸»å‡½æ•°
+/*
+// ÑéÖ¤SqListÏà¹ØËã·¨µÄÖ÷º¯Êı
 Status main()
 {
 	SqList L;
@@ -12,17 +13,17 @@ Status main()
 
 	InitList_Sq(L);
 
-	// å‘SqListè¾“å…¥5ä¸ªå…ƒç´ 
-	printf("è¯·å‘SqListä¸­è¾“å…¥%dä¸ªå…ƒç´ ï¼š", L.listsize);		// æ¯ä¸ªå…ƒç´ é—´ç”¨ç©ºæ ¼éš”å¼€
+	// ÏòSqListÊäÈë5¸öÔªËØ
+	printf("ÇëÏòSqListÖĞÊäÈë%d¸öÔªËØ£º", L.listsize);		// Ã¿¸öÔªËØ¼äÓÃ¿Õ¸ñ¸ô¿ª
 	for (i = 0; i < L.listsize; i++)
 	{
 		scanf("%d", &L.elem[i]);
 		++L.length;
 	}
 
-	// æ‰“å°SqListä¸­çš„å…ƒç´ 
+	// ´òÓ¡SqListÖĞµÄÔªËØ
 	printf("----------------------------\n");
-	printf("SqListä¸­çš„å…ƒç´ ä¸ºï¼š\n");
+	printf("SqListÖĞµÄÔªËØÎª£º\n");
 	for (i = 0; i < L.length; i++)
 	{
 		printf("%d ", *(L.elem + i));
@@ -30,18 +31,18 @@ Status main()
 	printf("\n");
 	printf("----------------------------\n");
 
-	// åœ¨ç¬¬iä¸ªä½ç½®å‰æ’å…¥eå¹¶æ‰“å°
-	printf("è¯·è¾“å…¥å°†åœ¨ç¬¬å‡ ä¸ªä½ç½®å‰æ’å…¥å…ƒç´ ï¼š");
+	// ÔÚµÚi¸öÎ»ÖÃÇ°²åÈëe²¢´òÓ¡
+	printf("ÇëÊäÈë½«ÔÚµÚ¼¸¸öÎ»ÖÃÇ°²åÈëÔªËØ£º");
 	scanf("%d", &i);
-	printf("è¯·è¾“å…¥è¦æ’å…¥çš„å…ƒç´ ï¼š");
+	printf("ÇëÊäÈëÒª²åÈëµÄÔªËØ£º");
 	scanf("%d", &e);
 	if (!ListInsert_Sq(L, i, e))
 	{
-		printf("æ— æ³•åœ¨ç¬¬%dä¸ªä½ç½®å‰æ’å…¥å…ƒç´ ", i);
+		printf("ÎŞ·¨ÔÚµÚ%d¸öÎ»ÖÃÇ°²åÈëÔªËØ", i);
 		printf("\n");
 		exit(ERROR);
 	}
-	printf("æ’å…¥æˆåŠŸï¼š\n");
+	printf("²åÈë³É¹¦£º\n");
 	for (i = 0; i < L.length; i++)
 	{
 		printf("%d ", L.elem[i]);
@@ -49,16 +50,16 @@ Status main()
 	printf("\n");
 	printf("----------------------------\n");
 
-	// åˆ é™¤ç¬¬iä¸ªä½ç½®çš„å…ƒç´ åï¼Œæ‰“å°SqListä¸­çš„å…ƒç´ å¹¶ç”¨eè¿”å›åˆ é™¤çš„å…ƒç´ 
-	printf("è¯·è¾“å…¥è¦åˆ é™¤å…ƒç´ çš„ä½ç½®ï¼š");
+	// É¾³ıµÚi¸öÎ»ÖÃµÄÔªËØºó£¬´òÓ¡SqListÖĞµÄÔªËØ²¢ÓÃe·µ»ØÉ¾³ıµÄÔªËØ
+	printf("ÇëÊäÈëÒªÉ¾³ıÔªËØµÄÎ»ÖÃ£º");
 	scanf("%d", &i);
 	if (!ListDelete_Sq(L, i, e))
 	{
-		printf("æ— æ³•åˆ é™¤ç¬¬%dä¸ªä½ç½®çš„å…ƒç´ ", i);
+		printf("ÎŞ·¨É¾³ıµÚ%d¸öÎ»ÖÃµÄÔªËØ", i);
 		printf("\n");
 		exit(ERROR);
 	}
-	printf("åˆ é™¤æˆåŠŸï¼š\n");
+	printf("É¾³ı³É¹¦£º\n");
 	for (i = 0; i < L.length; i++)
 	{
 		printf("%d ", *(L.elem + i));
@@ -68,25 +69,26 @@ Status main()
 
 	return OK;
 }
+*/
 
 /*
-// éªŒè¯LinkListç›¸å…³ç®—æ³•çš„ä¸»å‡½æ•°
+// ÑéÖ¤LinkListÏà¹ØËã·¨µÄÖ÷º¯Êı
 Status main()
 {
 	LinkList L, p;
 	int i;
 	ElemType e;
 
-	printf("è¯·è¾“å…¥è¦åˆ›å»ºé“¾å¼çº¿æ€§è¡¨å…ƒç´ çš„ä¸ªæ•°ï¼š");
+	printf("ÇëÊäÈëÒª´´½¨Á´Ê½ÏßĞÔ±íÔªËØµÄ¸öÊı£º");
 	scanf("%d", &i);
-	printf("è¯·å€’åºè¾“å…¥%dä¸ªå…ƒç´ ï¼š", i);			// æ¯ä¸ªå…ƒç´ é—´ç”¨ç©ºæ ¼éš”å¼€
+	printf("Çëµ¹ĞòÊäÈë%d¸öÔªËØ£º", i);			// Ã¿¸öÔªËØ¼äÓÃ¿Õ¸ñ¸ô¿ª
 
-	// åˆ›å»ºçº¿æ€§é“¾è¡¨
+	// ´´½¨ÏßĞÔÁ´±í
 	CreateList_L(L, i);
 
-	// æ‰“å°LinkListä¸­çš„å…ƒç´ 
+	// ´òÓ¡LinkListÖĞµÄÔªËØ
 	printf("----------------------------\n");
-	printf("LinkListä¸­çš„å…ƒç´ ä¸ºï¼š\n");
+	printf("LinkListÖĞµÄÔªËØÎª£º\n");
 	for (p = L->next; p; p = p->next)
 	{
 		printf("%d ", p->data);
@@ -94,18 +96,18 @@ Status main()
 	printf("\n");
 	printf("----------------------------\n");
 
-	// åœ¨ç¬¬iä¸ªä½ç½®å‰æ’å…¥eå¹¶æ‰“å°
-	printf("è¯·è¾“å…¥å°†åœ¨ç¬¬å‡ ä¸ªä½ç½®å‰æ’å…¥å…ƒç´ ï¼š");
+	// ÔÚµÚi¸öÎ»ÖÃÇ°²åÈëe²¢´òÓ¡
+	printf("ÇëÊäÈë½«ÔÚµÚ¼¸¸öÎ»ÖÃÇ°²åÈëÔªËØ£º");
 	scanf("%d", &i);
-	printf("è¯·è¾“å…¥è¦æ’å…¥çš„å…ƒç´ ï¼š");
+	printf("ÇëÊäÈëÒª²åÈëµÄÔªËØ£º");
 	scanf("%d", &e);
 	if (!ListInsert_L(L, i, e))
 	{
-		printf("æ— æ³•åœ¨ç¬¬%dä¸ªä½ç½®å‰æ’å…¥å…ƒç´ ", i);
+		printf("ÎŞ·¨ÔÚµÚ%d¸öÎ»ÖÃÇ°²åÈëÔªËØ", i);
 		printf("\n");
 		exit(ERROR);
 	}
-	printf("æ’å…¥æˆåŠŸï¼š\n");
+	printf("²åÈë³É¹¦£º\n");
 	for (p = L->next; p; p = p->next)
 	{
 		printf("%d ", p->data);
@@ -113,16 +115,16 @@ Status main()
 	printf("\n");
 	printf("----------------------------\n");
 
-	// åˆ é™¤ç¬¬iä¸ªä½ç½®çš„å…ƒç´ åï¼Œæ‰“å°LinkListä¸­çš„å…ƒç´ å¹¶ç”¨eè¿”å›åˆ é™¤çš„å…ƒç´ 
-	printf("è¯·è¾“å…¥è¦åˆ é™¤å…ƒç´ çš„ä½ç½®ï¼š");
+	// É¾³ıµÚi¸öÎ»ÖÃµÄÔªËØºó£¬´òÓ¡LinkListÖĞµÄÔªËØ²¢ÓÃe·µ»ØÉ¾³ıµÄÔªËØ
+	printf("ÇëÊäÈëÒªÉ¾³ıÔªËØµÄÎ»ÖÃ£º");
 	scanf("%d", &i);
 	if (!ListDelete_L(L, i, e))
 	{
-		printf("æ— æ³•åˆ é™¤ç¬¬%dä¸ªä½ç½®çš„å…ƒç´ ", i);
+		printf("ÎŞ·¨É¾³ıµÚ%d¸öÎ»ÖÃµÄÔªËØ", i);
 		printf("\n");
 		exit(ERROR);
 	}
-	printf("åˆ é™¤æˆåŠŸï¼š\n");
+	printf("É¾³ı³É¹¦£º\n");
 	for (p = L->next; p; p = p->next)
 	{
 		printf("%d ", p->data);
@@ -131,91 +133,123 @@ Status main()
 	printf("e = %d\n", e);
 	printf("----------------------------\n");
 
-	// è·å–LinkListä¸­çš„ç¬¬iä¸ªå…ƒç´ 
-	printf("è¯·è¾“å…¥æƒ³è¦è·å–ç¬¬å‡ ä¸ªå…ƒç´ ï¼š");
+	// »ñÈ¡LinkListÖĞµÄµÚi¸öÔªËØ
+	printf("ÇëÊäÈëÏëÒª»ñÈ¡µÚ¼¸¸öÔªËØ£º");
 	scanf("%d", &i);
 	if (!GetElem_L(L, i, e))
 	{
-		printf("æ— æ³•è·å–ç¬¬%dä¸ªä½ç½®çš„å…ƒç´ ", i);
+		printf("ÎŞ·¨»ñÈ¡µÚ%d¸öÎ»ÖÃµÄÔªËØ", i);
 		printf("\n");
 		exit(ERROR);
 	}
-	printf("è·å–æˆåŠŸï¼š\n");
+	printf("»ñÈ¡³É¹¦£º\n");
 	printf("e = %d\n", e);
 
 	return OK;
 }
 */
 
-/*
-// éªŒè¯SqStackç›¸å…³ç®—æ³•çš„ä¸»å‡½æ•°
+// Ñ¹Õ»²Ù×÷
+void PushStack(int i, SqStack &S, SElemType e)
+{
+	printf("----------------------------\n");
+	printf("Ñ¹Õ»£º\n");
+	// ÏòSqStackÊäÈë1¸öÔªËØ
+	printf("ÇëÏòSqStackÖĞÊäÈë1¸öÔªËØ£º");		// Ã¿¸öÔªËØ¼äÓÃ¿Õ¸ñ¸ô¿ª
+	scanf("%d", &e);
+	Push(S, e);
+
+	// ´òÓ¡SqListÖĞµÄÔªËØ
+	printf("----------------------------\n");
+	printf("SqStackÖĞµÄÔªËØÎª£º\n");
+	for (i = 0; i < S.top - S.base; i++)
+	{
+		printf("%d ", *(S.base + i));
+	}
+	printf("\n");
+	printf("----------------------------\n");
+}
+
+// µ¯Õ»²Ù×÷
+void PopStack(int i, SqStack &S, SElemType &e)
+{
+	printf("----------------------------\n");
+	printf("µ¯Õ»£º\n");
+	Pop(S, e);
+
+	// ´òÓ¡SqListÖĞµÄÔªËØ
+	printf("SqStackÖĞµÄÔªËØÎª£º\n");
+	for (i = 0; i < S.top - S.base; i++)
+	{
+		printf("%d ", *(S.base + i));
+	}
+	printf("\n");
+	printf("e =%d\n", e);
+	printf("----------------------------\n");
+}
+
+// ÑéÖ¤SqStackÏà¹ØËã·¨µÄÖ÷º¯Êı
 Status main()
 {
 	SqStack S;
-	int i, j;
-	SElemType e;
+	int i = 0;
+	SElemType e = 0;
 
 	InitStack(S);
 
-	printf("å‹æ ˆï¼š\n");
-	for(i = 0; i < S.stacksize; i++)
+	while (true)
 	{
-		// å‘SqStackè¾“å…¥1ä¸ªå…ƒç´ 
-		printf("è¯·å‘SqStackä¸­è¾“å…¥1ä¸ªå…ƒç´ ï¼š");		// æ¯ä¸ªå…ƒç´ é—´ç”¨ç©ºæ ¼éš”å¼€
-		scanf("%d", &e);
-		Push(S, e);
-
-		// æ‰“å°SqListä¸­çš„å…ƒç´ 
-		printf("----------------------------\n");
-		printf("SqStackä¸­çš„å…ƒç´ ä¸ºï¼š\n");
-		for (i = 0; i < S.top - S.base; i++)
+		printf("ÇëÑ¡ÔñÒ»Ğ©ĞòºÅ½øĞĞ²Ù×÷£º\n");
+		printf("1.Ñ¹Õ»	2.µ¯Õ»	3.ÍË³ö\n");
+		printf("ÇëÊäÈëÄúµÄÑ¡Ôñ£º");
+		scanf("%d", &i);
+		switch (i)
 		{
-			printf("%d ", *(S.base + i));
+		case 1:
+			if (!StackFull(S))
+			{
+				PushStack(i, S, e);
+			}
+			break;
+		case 2:
+			if (!StackEmpty(S))
+			{
+			PopStack(i, S, e);
+			}
+			break;
+		case 3:
+			exit(OK);
+			break;
+		default:
+			exit(OK);
+			break;
 		}
-		printf("\n");
-		printf("----------------------------\n");
 	}
-	
-	printf("\n\n\nå¼¹æ ˆï¼š\n");
-	for(i = 0; i < S.stacksize; i++)
-	{
-		Pop(S,e);
-		printf("SqStackä¸­çš„å…ƒç´ ä¸ºï¼š\n");
-		for (j = 0; j < S.top - S.base; j++)
-		{
-			printf("%d ", *(S.base + i));
-		}
-		printf("\n");
-		printf("e =%d\n", e);
-		printf("----------------------------\n");
-	}
-	
 	return OK;
 }
-*/
 
 /*
-// ç®€å•çš„Visitå‡½æ•°
+// ¼òµ¥µÄVisitº¯Êı
 Status PrintElement(TElemType e)
 {
 	printf("%c", e);
 	return OK;
 }
 
-// éªŒè¯BiTreeç›¸å…³ç®—æ³•çš„ä¸»å‡½æ•°
-// è¾“å…¥:"ABC  DE G  F   "
+// ÑéÖ¤BiTreeÏà¹ØËã·¨µÄÖ÷º¯Êı
+// ÊäÈë:"ABC  DE G  F   "
 Status main()
 {
 	BiTree T;
-	printf("è¯·åˆ›å»ºä¸€ä¸ªäºŒå‰æ ‘ï¼š");
-	CreateBiTree(T);	// åˆ›å»ºä¸€ä¸ªäºŒå‰æ ‘
-	printf("å…ˆåºéå†ï¼š");
+	printf("Çë´´½¨Ò»¸ö¶ş²æÊ÷£º");
+	CreateBiTree(T);	// ´´½¨Ò»¸ö¶ş²æÊ÷
+	printf("ÏÈĞò±éÀú£º");
 	PreOrderTraverse(T, PrintElement);
 	printf("\n");
-	printf("ä¸­åºéå†ï¼ˆæ–¹æ³•ä¸€ï¼‰ï¼š");
+	printf("ÖĞĞò±éÀú£¨·½·¨Ò»£©£º");
 	InOrderTraverse(T, PrintElement, 1);
 	printf("\n");
-	printf("ä¸­åºéå†ï¼ˆæ–¹æ³•äºŒï¼‰ï¼š");
+	printf("ÖĞĞò±éÀú£¨·½·¨¶ş£©£º");
 	InOrderTraverse(T, PrintElement, 2);
 	printf("\n");
 	return OK;
