@@ -185,7 +185,7 @@ void PopStack(int i, SqStack &S, SElemType &e)
 		printf("%d ", *(S.base + i));
 	}
 	printf("\n");
-	printf("e =%d\n", e);
+	printf("e = %d\n", e);
 	printf("----------------------------\n");
 }
 
@@ -201,7 +201,7 @@ Status main()
 	while (true)
 	{
 		printf("请选择一些序号进行操作：\n");
-		printf("1.压栈	2.弹栈	3.退出\n");
+		printf("1.压栈	2.弹栈	3.获取栈顶元素	4.退出\n");
 		printf("请输入您的选择：");
 		scanf("%d", &i);			// 获取用户选择的操作代码
 		switch (i)
@@ -219,6 +219,15 @@ Status main()
 			}
 			break;
 		case 3:
+			if (GetTop(S, e))
+			{
+				printf("----------------------------\n");
+				printf("栈顶元素为：\n");
+				printf("e = %d\n", e);
+				printf("----------------------------\n");
+			}
+			break;
+		case 4:
 			exit(OK);
 			break;
 		default:
