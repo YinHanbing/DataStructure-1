@@ -149,6 +149,7 @@ Status main()
 }
 */
 
+
 // 压栈操作
 void PushStack(int i, SqStack &S, SElemType e)
 {
@@ -195,14 +196,14 @@ Status main()
 	int i = 0;
 	SElemType e = 0;
 
-	InitStack(S);
+	InitStack(S);					// 初始化一个空栈
 
 	while (true)
 	{
 		printf("请选择一些序号进行操作：\n");
 		printf("1.压栈	2.弹栈	3.退出\n");
 		printf("请输入您的选择：");
-		scanf("%d", &i);
+		scanf("%d", &i);			// 获取用户选择的操作代码
 		switch (i)
 		{
 		case 1:
@@ -214,7 +215,7 @@ Status main()
 		case 2:
 			if (!StackEmpty(S))
 			{
-			PopStack(i, S, e);
+				PopStack(i, S, e);
 			}
 			break;
 		case 3:
