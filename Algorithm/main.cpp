@@ -1,6 +1,7 @@
 #include "SqList.h"
 #include "LinkList.h"
 #include "SqStack.h"
+#include "SqQueue.h"
 #include "BiTree.h"
 
 /*
@@ -149,7 +150,7 @@ Status main()
 }
 */
 
-
+/*
 // 压栈操作
 void PushStack(int i, SqStack &S, SElemType e)
 {
@@ -226,6 +227,84 @@ Status main()
 				printf("e = %d\n", e);
 				printf("----------------------------\n");
 			}
+			break;
+		case 4:
+			exit(OK);
+			break;
+		default:
+			exit(OK);
+			break;
+		}
+	}
+	return OK;
+}
+*/
+
+/*
+// 验证LinkQueue相关算法的主函数
+Status main()
+{
+	return OK;
+}
+*/
+
+// 验证SqQueue相关算法的主函数
+Status main()
+{
+	SqQueue Q;
+	int i = 0;
+	QElemType e = 0;
+
+	InitQueue(Q);	// 构造一个空队列
+
+	while (true)
+	{
+		printf("请选择一些序号进行操作：\n");
+		printf("1.入队	2.出队	3.获取队列长度	4.退出\n");
+		printf("请输入您的选择：");
+		scanf("%d", &i);			// 获取用户选择的操作代码
+		switch (i)
+		{
+		case 1:
+			printf("----------------------------\n");
+			printf("请输入一个元素：");
+			scanf("%d", &e);
+			if (!EnQueue(Q, e)) {
+				printf("无法入队，队列已满。\n");
+				printf("----------------------------\n");
+				break;
+			}
+
+			// 打印队列元素
+			printf("当前队列元素为：\n");
+			for (i = Q.front; i != Q.rear; i = (i + 1) % MAXQSIZE)
+			{
+				printf("%d ", Q.base[i]);
+			}
+			printf("\n");
+			printf("----------------------------\n");
+			break;
+		case 2:
+			printf("----------------------------\n");
+			if (!DeQueue(Q, e)) {
+				printf("无法出队，队列已空。\n");
+				printf("----------------------------\n");
+				break;
+			}
+			// 打印队列元素
+			printf("当前队列元素为：\n");
+			for (i = Q.front; i != Q.rear; i = (i + 1) % MAXQSIZE)
+			{
+				printf("%d ", Q.base[i]);
+			}
+			printf("\n");
+			printf("e = %d\n", e);
+			printf("----------------------------\n");
+			break;
+		case 3:
+			printf("----------------------------\n");
+			printf("队列长度为：%d\n", QueueLength(Q));
+			printf("----------------------------\n");
 			break;
 		case 4:
 			exit(OK);

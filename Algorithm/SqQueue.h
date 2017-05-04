@@ -19,7 +19,7 @@ typedef struct {
 Status InitQueue(SqQueue &Q);
 
 // 返回Q的元素个数，即队列的长度
-Status QueueLength(SqQueue Q);
+int QueueLength(SqQueue Q);
 
 // 插入元素e为Q的新的队尾元素
 Status EnQueue(SqQueue &Q, QElemType e);
