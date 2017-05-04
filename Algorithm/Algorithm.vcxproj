@@ -170,6 +170,7 @@
     <ClCompile Include="MergeList_Sq.cpp" />
     <ClCompile Include="Pop.cpp" />
     <ClCompile Include="PreOrderTraverse.cpp" />
+    <ClCompile Include="PrintElement.cpp" />
     <ClCompile Include="Push.cpp" />
     <ClCompile Include="QueueLength_Sq.cpp" />
     <ClCompile Include="StackEmpty.cpp" />

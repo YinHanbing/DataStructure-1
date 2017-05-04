@@ -46,3 +46,6 @@ Status PostOrderTraverse(BiTree T, Status(*Visit)(TElemType e));
  * 一旦Visit失败，则操作失败。
  */
 Status LevelOrderTraverse(BiTree T, Status(*Visit)(TElemType e));
+
+// 简单的Visit函数
+Status PrintElement(TElemType e);

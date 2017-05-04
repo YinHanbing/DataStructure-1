@@ -11,5 +11,6 @@ Status EnQueue(LinkQueue &Q, QElemType e)
 	p->data = e;
 	p->next = NULL;
 	Q.rear->next = p;
+	Q.rear = p;
 	return OK;
 }

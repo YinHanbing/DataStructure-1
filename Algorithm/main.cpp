@@ -1,6 +1,7 @@
 #include "SqList.h"
 #include "LinkList.h"
 #include "SqStack.h"
+#include "LinkQueue.h"
 #include "SqQueue.h"
 #include "BiTree.h"
 
@@ -151,51 +152,12 @@ Status main()
 */
 
 /*
-// 压栈操作
-void PushStack(int i, SqStack &S, SElemType e)
-{
-	printf("----------------------------\n");
-	printf("压栈：\n");
-	// 向SqStack输入1个元素
-	printf("请向SqStack中输入1个元素：");		// 每个元素间用空格隔开
-	scanf("%d", &e);
-	Push(S, e);
-
-	// 打印SqList中的元素
-	printf("----------------------------\n");
-	printf("SqStack中的元素为：\n");
-	for (i = 0; i < S.top - S.base; i++)
-	{
-		printf("%d ", *(S.base + i));
-	}
-	printf("\n");
-	printf("----------------------------\n");
-}
-
-// 弹栈操作
-void PopStack(int i, SqStack &S, SElemType &e)
-{
-	printf("----------------------------\n");
-	printf("弹栈：\n");
-	Pop(S, e);
-
-	// 打印SqList中的元素
-	printf("SqStack中的元素为：\n");
-	for (i = 0; i < S.top - S.base; i++)
-	{
-		printf("%d ", *(S.base + i));
-	}
-	printf("\n");
-	printf("e = %d\n", e);
-	printf("----------------------------\n");
-}
-
 // 验证SqStack相关算法的主函数
 Status main()
 {
 	SqStack S;
-	int i = 0;
-	SElemType e = 0;
+	int i;
+	SElemType e;
 
 	InitStack(S);					// 初始化一个空栈
 
@@ -210,14 +172,49 @@ Status main()
 		case 1:
 			if (!StackFull(S))
 			{
-				PushStack(i, S, e);
+				printf("----------------------------\n");
+				printf("压栈：\n");
+				// 向SqStack输入1个元素
+				printf("请向SqStack中输入1个元素：");		// 每个元素间用空格隔开
+				scanf("%d", &e);
+				Push(S, e);
+
+				// 打印SqList中的元素
+				printf("----------------------------\n");
+				printf("SqStack中的元素为：\n");
+				for (i = 0; i < S.top - S.base; i++)
+				{
+					printf("%d ", *(S.base + i));
+				}
+				printf("\n");
+				printf("----------------------------\n");
+				break;
 			}
+			printf("----------------------------\n");
+			printf("无法压栈，栈满！\n");
+			printf("----------------------------\n");
 			break;
 		case 2:
 			if (!StackEmpty(S))
 			{
-				PopStack(i, S, e);
+				printf("----------------------------\n");
+				printf("弹栈：\n");
+				Pop(S, e);
+
+				// 打印SqList中的元素
+				printf("SqStack中的元素为：\n");
+				for (i = 0; i < S.top - S.base; i++)
+				{
+					printf("%d ", *(S.base + i));
+				}
+				printf("\n");
+				printf("e = %d\n", e);
+				printf("----------------------------\n");
+				break;
 			}
+			printf("----------------------------\n");
+			printf("无法弹栈，栈空！\n");
+			printf("----------------------------\n");
 			break;
 		case 3:
 			if (GetTop(S, e))
@@ -240,20 +237,85 @@ Status main()
 }
 */
 
-/*
 // 验证LinkQueue相关算法的主函数
 Status main()
 {
+	LinkQueue Q;
+	QueuePtr p;
+	int i;
+	QElemType e;
+
+	InitQueue(Q);	// 构造一个空队列
+
+	while (true)
+	{
+		printf("请选择一些序号进行操作：\n");
+		printf("1.入队	2.出队	3.销毁队列	4.退出\n");
+		printf("请输入您的选择：");
+		scanf("%d", &i);			// 获取用户选择的操作代码
+		switch (i)
+		{
+		case 1:
+			printf("----------------------------\n");
+			printf("请输入一个元素：");
+			scanf("%d", &e);
+			if (!EnQueue(Q, e)) {
+				printf("无法入队，队列已满！\n");
+				printf("----------------------------\n");
+				break;
+			}
+
+			// 打印队列元素
+			printf("当前队列元素为：\n");
+			for (p = Q.front->next; p; p = p->next)
+			{
+				printf("%d ", p->data);
+			}
+			printf("\n");
+			printf("----------------------------\n");
+			break;
+		case 2:
+			printf("----------------------------\n");
+			if (!DeQueue(Q, e)) {
+				printf("无法出队，队列已空！\n");
+				printf("----------------------------\n");
+				break;
+			}
+			// 打印队列元素
+			printf("当前队列元素为：\n");
+			for (p = Q.front->next; p; p = p->next)
+			{
+				printf("%d ", p->data);
+			}
+			printf("\n");
+			printf("e = %d\n", e);
+			printf("----------------------------\n");
+			break;
+		case 3:
+			printf("----------------------------\n");
+			DestroyQueue(Q);
+			printf("队列销毁成功！\n");
+			printf("----------------------------\n");
+			exit(OK);
+			break;
+		case 4:
+			exit(OK);
+			break;
+		default:
+			exit(OK);
+			break;
+		}
+	}
 	return OK;
 }
-*/
 
+/*
 // 验证SqQueue相关算法的主函数
 Status main()
 {
 	SqQueue Q;
-	int i = 0;
-	QElemType e = 0;
+	int i;
+	QElemType e;
 
 	InitQueue(Q);	// 构造一个空队列
 
@@ -270,7 +332,7 @@ Status main()
 			printf("请输入一个元素：");
 			scanf("%d", &e);
 			if (!EnQueue(Q, e)) {
-				printf("无法入队，队列已满。\n");
+				printf("无法入队，队列已满！\n");
 				printf("----------------------------\n");
 				break;
 			}
@@ -287,7 +349,7 @@ Status main()
 		case 2:
 			printf("----------------------------\n");
 			if (!DeQueue(Q, e)) {
-				printf("无法出队，队列已空。\n");
+				printf("无法出队，队列已空！\n");
 				printf("----------------------------\n");
 				break;
 			}
@@ -316,15 +378,9 @@ Status main()
 	}
 	return OK;
 }
+*/
 
 /*
-// 简单的Visit函数
-Status PrintElement(TElemType e)
-{
-	printf("%c", e);
-	return OK;
-}
-
 // 验证BiTree相关算法的主函数
 // 输入:"ABC  DE G  F   "
 Status main()

@@ -31,7 +31,7 @@ Status ClearQueue(LinkQueue &Q);
 Status QueueEmpty(LinkQueue Q);
 
 // 返回Q的元素个数，即为队列的长度
-Status QueueLength(LinkQueue Q);
+int QueueLength(LinkQueue Q);
 
 // 若队列不空，则用e返回Q的队头元素，并返回OK；否则返回ERROR
 Status GetHead(LinkQueue Q, QElemType &e);

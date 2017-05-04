@@ -159,6 +159,9 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="PrintElement.cpp">
+      <Filter>源文件\Tree\BiTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="predefine.h">
