@@ -162,6 +162,15 @@
     <ClCompile Include="PrintElement.cpp">
       <Filter>源文件\Tree\BiTree</Filter>
     </ClCompile>
+    <ClCompile Include="InOrderTraverse_Thr.cpp">
+      <Filter>源文件\Tree\BiThrTree</Filter>
+    </ClCompile>
+    <ClCompile Include="InOrderThreading.cpp">
+      <Filter>源文件\Tree\BiThrTree</Filter>
+    </ClCompile>
+    <ClCompile Include="InThreading.cpp">
+      <Filter>源文件\Tree\BiThrTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="predefine.h">
