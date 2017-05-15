@@ -24,4 +24,4 @@ void InThreading(BiThrTree p)
 		pre = p;					// 保持pre指向p的前驱
 		InThreading(p->rchild);		// 右子树线索化
 	}
-}//	InThreading
+}	// InThreading

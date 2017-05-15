@@ -57,4 +57,4 @@ Status InOrderTraverse(BiTree T, Status(*Visit)(TElemType e), int method)
 		break;
 	}
 	return OK;
-}//	InOrderTraverse
+}	// InOrderTraverse

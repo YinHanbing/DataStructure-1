@@ -28,4 +28,4 @@ Status InOrderThreading(BiThrTree & Thrt, BiThrTree T)
 		Thrt->rchild = pre;
 	}
 	return OK;
-}// InOrderThreading
+}	// InOrderThreading

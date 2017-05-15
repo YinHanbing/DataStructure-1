@@ -92,7 +92,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ModuleDefinitionFile>Source.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -151,6 +152,7 @@
     <ClCompile Include="DeQueue_L.cpp" />
     <ClCompile Include="DeQueue_Sq.cpp" />
     <ClCompile Include="DestroyQueue_L.cpp" />
+    <ClCompile Include="difference.cpp" />
     <ClCompile Include="EnQueue_L.cpp" />
     <ClCompile Include="EnQueue_Sq.cpp" />
     <ClCompile Include="Free_SL.cpp" />

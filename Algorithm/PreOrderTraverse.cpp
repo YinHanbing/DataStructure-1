@@ -25,4 +25,4 @@ Status PreOrderTraverse(BiTree T, Status(*Visit)(TElemType e))
 	{
 		return OK;
 	}
-}//	PreOrderTraverse
+}	// PreOrderTraverse

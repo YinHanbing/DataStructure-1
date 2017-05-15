@@ -31,3 +31,9 @@ int LocateElem_SL(SLinkList S, ElemType e);
 
 // 若备用空间链表非空，则返回分配的结点下标，否则返回0
 int Malloc_SL(SLinkList &space);
+
+/*
+ * 依次输入集合A和B的元素，在一维数组space中建立表示集合(A-B)U(B-A)
+ * 的静态链表，S为其头指针。假设备用空间足够大，space[0].cur为其头指针。
+ */
+void difference(SLinkList &space, int &S);

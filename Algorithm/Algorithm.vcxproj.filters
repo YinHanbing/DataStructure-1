@@ -171,6 +171,9 @@
     <ClCompile Include="InThreading.cpp">
       <Filter>源文件\Tree\BiThrTree</Filter>
     </ClCompile>
+    <ClCompile Include="difference.cpp">
+      <Filter>源文件\List\SLList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="predefine.h">

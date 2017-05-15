@@ -26,4 +26,4 @@ Status InOrderTraverse_Thr(BiThrTree T, Status(*Visit)(TElemType e))
 		p = p->rchild;
 	}
 	return OK;
-}//	InOrderTraverse_Thr
+}	// InOrderTraverse_Thr
